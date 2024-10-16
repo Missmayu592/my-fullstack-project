@@ -1,0 +1,20 @@
+.nav-link {
+    position: relative;
+    padding-right: 2rem; /* Adjust padding for space on the right */
+}
+
+.badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(20%, -50%); /* Adjust position of the badge */
+    padding: 0.2em 0.5em; /* Adjust size of the badge */
+    font-size: 0.75rem; /* Adjust font size of the badge */
+    border-radius: 0.375rem; /* Optional: adjust border radius */
+}
+
+/* Optional: Add hover effect or any additional styling */
+.nav-link:hover .badge {
+    background-color: #d9534f; /* Change badge color on hover */
+    color: #fff; /* Change badge text color on hover */
+}

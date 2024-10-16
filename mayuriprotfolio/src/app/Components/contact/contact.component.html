@@ -1,0 +1,85 @@
+<!-- <div class="container mb-3">
+    <div class="text-center my-5">
+        <h1 class="display-4">CONTACT ME</h1>
+        <p class="lead">I'LL BE GLAD TO ANSWER YOUR QUESTION</p>
+    </div>
+    <div class="row">
+        <div class="col" [hidden]="submitted">
+            <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+                <div class="form-group my-2">
+                    <label for="name">Name: </label>
+                    <input type="text" class="form-control" name="name" id="name" required [(ngModel)]="clients.name" #name="ngModel">
+                    <div *ngIf="name.invalid && name.touched" class="text-danger">Name is required</div>
+                </div>
+                </div>
+                <div class="form-group my-2">
+                    <label for="email">Email Address: </label>
+                    <input type="email" class="form-control"  name="email" id="email" required [(ngModel)]="clients.email" #email="ngModel">
+                    <div *ngIf="email.invalid && email.touched" class="text-danger">Email is required</div>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject: </label>
+                    <input type="text" class="form-control" placeholder="Subject" name="subject" id="subject" required [(ngModel)]="clients.subject" #subject="ngModel">
+                    <div *ngIf="subject.invalid && subject.touched" class="text-danger">Subject is required</div>
+                </div>
+                <div class="form-group my-2">
+                    <label for="msg">Your Comments: </label>
+                    <textarea name="msg" class="form-control" rows="10" placeholder="Your message" id="msg" required [(ngModel)]="clients.msg" #msg="ngModel"></textarea>
+                    <div *ngIf="msg.invalid && msg.touched" class="text-danger">Message is required</div>
+                </div>
+                <button class="btn btn-light my-2" type="submit" [disabled]="contactForm.invalid">Send Message</button>
+            </form>
+        </div>
+        <div class="col ">
+            <h6 class="text-center my-3 text-danger"><span style="font-size: 80px; color: white;">HURRY UP</span>....I'll contact soon!</h6>
+            
+        </div>
+    </div>
+
+    <div [hidden]="!submitted">
+        <h4 class="text-success">Send Message Successfully!</h4>
+    
+    </div>
+    
+</div> -->
+<div class="container mb-3">
+    <div class="text-center my-5">
+        <h1 class="display-4">CONTACT ME</h1>
+        <p class="lead">I'LL BE GLAD TO ANSWER YOUR QUESTION</p>
+    </div>
+    <div class="row">
+        <div class="col" [hidden]="submitted">
+            <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+                <div class="form-group my-2">
+                    <label for="name">Name: </label>
+                    <input type="text" class="form-control" name="name" id="name" required [(ngModel)]="clients.name" #name="ngModel">
+                    <div *ngIf="name.invalid && name.touched" class="text-danger">Name is required</div>
+                </div>
+                <div class="form-group my-2">
+                    <label for="email">Email Address: </label>
+                    <input type="email" class="form-control" name="email" id="email" required [(ngModel)]="clients.email" #email="ngModel">
+                    <div *ngIf="email.invalid && email.touched" class="text-danger">Email is required</div>
+                </div>
+                <div class="form-group my-2">
+                    <label for="subject">Subject: </label>
+                    <input type="text" class="form-control" placeholder="Subject" name="subject" id="subject" required [(ngModel)]="clients.subject" #subject="ngModel">
+                    <div *ngIf="subject.invalid && subject.touched" class="text-danger">Subject is required</div>
+                </div>
+                <div class="form-group my-2">
+                    <label for="msg">Your Comments: </label>
+                    <textarea name="msg" class="form-control" rows="10" placeholder="Your message" id="msg" required [(ngModel)]="clients.msg" #msg="ngModel"></textarea>
+                    <div *ngIf="msg.invalid && msg.touched" class="text-danger">Message is required</div>
+                </div>
+                <button class="btn btn-primary my-2" type="submit" [disabled]="contactForm.invalid">Send Message</button>
+            </form>
+        </div>
+        <div class="col ">
+            <h6 class="text-center my-3 text-danger"><span style="font-size: 80px; color: white;">HURRY UP</span>....I'll contact soon!</h6>
+        </div>
+    </div>
+
+    <div [hidden]="!submitted">
+        <h4 class="text-success">Send Message Successfully!</h4>
+    </div>
+</div>
+
