@@ -13,6 +13,7 @@ import { SkillsComponent } from './Components/skills/skills.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { NotcomponentComponent } from './Components/notcomponent/notcomponent.component';
+import { ProjectdetailsComponent } from './Components/projectdetails/projectdetails.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { NotcomponentComponent } from './Components/notcomponent/notcomponent.co
     ProjectsComponent,
     SkillsComponent,
     FooterComponent,
-    NotcomponentComponent
+    NotcomponentComponent,
+    ProjectdetailsComponent
   ],
   imports: [
     BrowserModule,

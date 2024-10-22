@@ -6,6 +6,7 @@ import { SkillsComponent } from './Components/skills/skills.component';
 import { ContactComponent } from './Components/contact/contact.component';
 import { ProjectsComponent } from './Components/projects/projects.component';
 import { NotcomponentComponent } from './Components/notcomponent/notcomponent.component';
+import { ProjectdetailsComponent } from './Components/projectdetails/projectdetails.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' }, // Default route
@@ -31,7 +32,12 @@ const routes: Routes = [
   },
   {
     path:'projects',
-    component:ProjectsComponent
+    component:ProjectsComponent,
+    
+  },
+  {
+    path:'details',
+    component:ProjectdetailsComponent
   }
 ];
 
