@@ -18,3 +18,10 @@
     background-color: #d9534f; /* Change badge color on hover */
     color: #fff; /* Change badge text color on hover */
 }
+
+.active-nav {
+    border-bottom: 1px solid #f1f3f5; /* Blue border */
+    font-weight: bold;
+    /* color: #007bff; */
+  }
+  
