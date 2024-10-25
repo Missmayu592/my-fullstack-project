@@ -47,3 +47,7 @@ h2 {
     color: aliceblue;
     text-indent: -9999px; /* Hides text but keeps it for accessibility */
 }
+
+.container{
+    user-select: none;
+}

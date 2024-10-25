@@ -1,3 +1,7 @@
+.container{
+    user-select: none;
+}
+
 #social {
     list-style: none;
     padding: 0;
@@ -26,3 +30,4 @@ ul li a {
     color: rgb(31, 28, 212);
     /* font-size: 29px; */
 }
+
